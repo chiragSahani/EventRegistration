@@ -1,0 +1,43 @@
+/* Write your CSS here */
+.events-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.events-list-container {
+  width: 60%;
+  background-color: #3a4b63;
+  padding: 24px;
+  margin-right: 16px;
+}
+
+.events-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .events-container {
+    flex-direction: column;
+  }
+
+  .events-list-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+}
