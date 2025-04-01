@@ -92,3 +92,7 @@ The following instructions are required for the tests to pass:
 
 - Roboto
 
+## Deployment
+
+The project is deployed and can be accessed at [Event Registration App](https://chiragevent.ccbp.tech).
+
