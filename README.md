@@ -1,73 +1,58 @@
-In this project, let's build an **Events** app by applying the concepts we have learned till now.
 
-### Refer to the image below:
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/events-output.gif" alt="events output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+# Event Registration
 
-### Design Files
+This project is an **Events** app built using React.js, CSS, and HTML. The app allows users to view and register for different events.
 
-<details>
-<summary>Click to view</summary>
+## Features
 
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Active Event](https://assets.ccbp.in/frontend/content/react-js/events-no-active-event-view-output.png)
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - Yet To Register](https://assets.ccbp.in/frontend/content/react-js/events-yet-to-register-view-output.png)
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - Registered](https://assets.ccbp.in/frontend/content/react-js/events-registered-view-output.png)
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - Registrations Closed](https://assets.ccbp.in/frontend/content/react-js/events-registrations-closed-view-output.png)
+- **No Active Event View**: Initially, the page displays a view indicating that no event is active.
+- **Yet To Register View**: Displays when an event with `registrationStatus` as `YET_TO_REGISTER` is clicked.
+- **Registered View**: Displays when an event with `registrationStatus` as `REGISTERED` is clicked.
+- **Registrations Closed View**: Displays when an event with `registrationStatus` as `REGISTRATIONS_CLOSED` is clicked.
 
-</details>
+## Design Files
 
-### Set Up Instructions
+Refer to the following design files to understand the layout and structure of the app:
 
-<details>
-<summary>Click to view</summary>
+- [No Active Event View](https://assets.ccbp.in/frontend/content/react-js/events-no-active-event-view-output.png)
+- [Yet To Register View](https://assets.ccbp.in/frontend/content/react-js/events-yet-to-register-view-output.png)
+- [Registered View](https://assets.ccbp.in/frontend/content/react-js/events-registered-view-output.png)
+- [Registrations Closed View](https://assets.ccbp.in/frontend/content/react-js/events-registrations-closed-view-output.png)
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+## Set Up Instructions
 
-### Completion Instructions
+To set up the project locally, follow these steps:
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+1. Download dependencies by running `npm install`.
+2. Start the app using `npm start`.
 
-The app must have the following functionalities
+## Completion Instructions
 
-- Initially, the page should have the [No Active Event View](https://assets.ccbp.in/frontend/content/react-js/events-no-active-event-view-output.png)
-- When the image of an event item with `registrationStatus` as `YET_TO_REGISTER` is clicked, then the [Yet To Register View](https://assets.ccbp.in/frontend/content/react-js/events-yet-to-register-view-output.png) should be displayed
-- When the image of an event item with `registrationStatus` as `REGISTERED` is clicked, then the [Registered View](https://assets.ccbp.in/frontend/content/react-js/events-registered-view-output.png) should be displayed
-- When the image of an event item with `registrationStatus` as `REGISTRATIONS_CLOSED` is clicked, then the [Registrations Closed View](https://assets.ccbp.in/frontend/content/react-js/events-registrations-closed-view-output.png) should be displayed
+The app must have the following functionalities:
 
-- The `Events` component is provided with `eventsList`. It consists of a list of event objects with the following properties in each event object
+- Initially display the [No Active Event View](https://assets.ccbp.in/frontend/content/react-js/events-no-active-event-view-output.png).
+- Display the [Yet To Register View](https://assets.ccbp.in/frontend/content/react-js/events-yet-to-register-view-output.png) when an event with `YET_TO_REGISTER` status is clicked.
+- Display the [Registered View](https://assets.ccbp.in/frontend/content/react-js/events-registered-view-output.png) when an event with `REGISTERED` status is clicked.
+- Display the [Registrations Closed View](https://assets.ccbp.in/frontend/content/react-js/events-registrations-closed-view-output.png) when an event with `REGISTRATIONS_CLOSED` status is clicked.
 
-  |        Key         | Data Type |
-  | :----------------: | :-------: |
-  |         id         |  String   |
-  |      imageUrl      |  String   |
-  |        name        |  String   |
-  |      location      |  String   |
-  | registrationStatus |  String   |
+The `Events` component is provided with `eventsList`, which consists of a list of event objects with the following properties:
 
-</details>
+| Key                | Data Type |
+|--------------------|-----------|
+| id                 | String    |
+| imageUrl           | String    |
+| name               | String    |
+| location           | String    |
+| registrationStatus | String    |
 
-<details>
-<summary>Components Structure</summary>
+## Components Structure
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/events-compoment-structure-breakdown.png" alt="component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+Refer to the following component structure breakdown:
 
-</details>
+![Component Structure Breakdown](https://assets.ccbp.in/frontend/content/react-js/events-compoment-structure-breakdown.png)
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
+## Implementation Files
 
 Use these files to complete the implementation:
 
@@ -77,58 +62,33 @@ Use these files to complete the implementation:
 - `src/components/EventItem/index.css`
 - `src/components/ActiveEventRegistrationDetails/index.js`
 - `src/components/ActiveEventRegistrationDetails/index.css`
-</details>
 
-### Important Note
+## Important Note
 
-<details>
-<summary>Click to view</summary>
+The following instructions are required for the tests to pass:
 
-<br/>
+- The image for each event item should have the alt attribute value as **event**.
 
-**The following instructions are required for the tests to pass**
+## Resources
 
-- The image for each event item should have alt attribute value as **event**
+### Image URLs
 
-</details>
+- [Yet to Register Image](https://assets.ccbp.in/frontend/react-js/events-register-img.png) - alt should be **yet to register**
+- [Registered Image](https://assets.ccbp.in/frontend/react-js/events-regestered-img.png) - alt should be **registered**
+- [Registrations Closed Image](https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png) - alt should be **registrations closed**
 
-### Resources
+### Colors
 
-<details>
-<summary>Image URLs</summary>
+- Hex: #64748b
+- Hex: #0967d2
+- Hex: #323f4b
+- Hex: #f8fafc
+- Hex: #475569
+- Hex: #ffffff
+- Hex: #2dd4bf
+- Hex: #3a4b63
 
-- [https://assets.ccbp.in/frontend/react-js/events-register-img.png](https://assets.ccbp.in/frontend/react-js/events-register-img.png) alt should be **yet to register**
-- [https://assets.ccbp.in/frontend/react-js/events-regestered-img.png](https://assets.ccbp.in/frontend/react-js/events-regestered-img.png) alt should be **registered**
-- [https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png](https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png) alt should be **registrations closed**
-
-</details>
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #64748b; width: 150px; padding: 10px; color: white">Hex: #64748b</div>
-<div style="background-color: #0967d2; width: 150px; padding: 10px; color: white">Hex: #0967d2</div>
-<div style="background-color: #323f4b; width: 150px; padding: 10px; color: white">Hex: #323f4b</div>
-<div style="background-color: #f8fafc; width: 150px; padding: 10px; color: black">Hex: #f8fafc</div>
-<div style="background-color: #475569; width: 150px; padding: 10px; color: white">Hex: #475569</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #2dd4bf; width: 150px; padding: 10px; color: black">Hex: #2dd4bf</div>
-<div style="background-color: #3a4b63; width: 150px; padding: 10px; color: white">Hex: #3a4b63</div>
-<br/>
-</details>
-
-<details>
-<summary>Font-families</summary>
+### Font Families
 
 - Roboto
 
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
